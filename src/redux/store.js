@@ -1,0 +1,7 @@
+
+import reducers from './reducers/index';
+import { legacy_createStore } from 'redux';
+
+const store=legacy_createStore(reducers,{},window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
+export default store;
